@@ -1,0 +1,87 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/#">BamseMoms Client Manager</a>
+        </div>
+
+        <nav class="navbar">
+            <div class="form-group">
+                <form class="form-inline">
+                    <div class="input-group-addon"><i  style=" margin-left: -90%;"class="fa fa-search"></i></div>
+                    <br><input type="text" class="form-control" placeholder="Search by field or tag" ng-model="searchData">
+                </form>
+            </div>
+        </nav>
+
+        <ul class="nav navbar-nav navbar-right">
+            <a href="#/addContact" class="btn btn-primary" role="button" style=" display: flex; align-items: center; ">
+                <span style = "padding-right: 10px;" class="material-icons">person_add</span>
+                <span>   Legg Til Person</span>
+            </a>
+        </ul>
+        <span id="user_para"></span>
+        <a class="btn btn-primary" id="logout" onclick="logout()" href="./#">Logout</a>
+    </div>
+</nav>
+
+
+<div class="container-fluid">
+    <div class="table-responsive">
+
+        <!-- The ng-click directive tells AngularJS what to do when an HTML element is clicked.    -->
+        <!-- The ng-show directive shows the specified HTML element if the expression evaluates to true -->
+        <table id="tableContact" class="table">
+            <thead>
+            <tr>
+                <th>
+                    <a href="#/" ng-click="sortField = 'name'; sortDecrescent = !sortDecrescent">
+                        Navn
+                        <span ng-show="sortField == 'name' && !sortDecrescent" class="fa fa-caret-down"></span>
+                        <span ng-show="sortField == 'name' && sortDecrescent" class="fa fa-caret-up"></span>
+                    </a>
+                </th>
+                <th >
+                    <a href="#/" ng-click="sortField = 'surname'; sortDecrescent = !sortDecrescent">
+                        EtterNavn
+                        <span ng-show="sortField == 'surname' && !sortDecrescent" class="fa fa-caret-down"></span>
+                        <span ng-show="sortField == 'surname' && sortDecrescent" class="fa fa-caret-up"></span>
+                    </a>
+                </th>
+                <th >
+                    <a href="#/" ng-click="sortField = 'mail'; sortDecrescent = !sortDecrescent">
+                        E-post
+                        <span ng-show="sortField == 'mail' && !sortDecrescent" class="fa fa-caret-down"></span>
+                        <span ng-show="sortField == 'mail' && sortDecrescent" class="fa fa-caret-up"></span>
+                    </a>
+                </th>
+                <th >Phone</th>
+                
+                <th style="width: 33%;">Produkter / Notater</th>
+                <th style="width: 10%;">Tag</th>
+                <th style="width: 10%;" >Se infomasjon</th>
+
+
+            </tr>
+            </thead>
+            <tbody>
+                <!-- The ng-repeat directive repeats a set of HTML, a given number of times: The set of HTML will be repeated once per item in a collection. -->
+                <!-- for each object in contacts, there is a row in table  -->
+
+                <!-- orderBy parameter implement sorting by sortField and sortDecrescent ( change value with ng-click )
+                <!-- filter parameter implement the search by searchData ( input field row 12 ) --><!-- Extra feature! -->
+
+                <tr ng-repeat="c in contacts | orderBy:sortField:sortDecrescent | filter: searchData ">
+                    <td>{{ c.name }}</td>
+                    <td>{{ c.surname }}</td>
+                    <td>{{ c.mail }}</td>
+                    <td >{{ c.phone }}</td>
+                    <td><small>{{ c.notes }}</small></td>
+                    <td><span ng-repeat="t in c.tags"><small>{{ t }}, </small></span></td>
+
+                    <td><a ng-click="setId(c.$id)" href="#/viewContact" class="btn" role="button"><i class="fa fa-address-card-o" style="font-size:24px" ></i></a></td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

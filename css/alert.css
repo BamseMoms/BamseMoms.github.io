@@ -1,0 +1,28 @@
+
+.content{
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+.strip{
+  width: 60%;
+  margin: auto;
+  padding: 25px;
+  background: #4F86C6; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #4F86C6 0%, #84B1ED 100%);
+	background: -webkit-linear-gradient(-45deg, #4F86C6 0%, #84B1ED 100%);
+	background: linear-gradient(135deg, #4F86C6 0%, #84B1ED 100%);
+  color: white;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  opacity: 1;
+  transition: opacity .8s;
+  border-radius: 50px;
+}
+.closebtn{
+  color: white;
+  float: right;
+  font-weight: bold;
+  font-size: 24px;
+  cursor: pointer;
+}

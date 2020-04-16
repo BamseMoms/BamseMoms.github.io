@@ -1,0 +1,62 @@
+<html>
+<head>
+  <title>BamseMoms | Nettside </title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="index.css" />
+  <link rel="icon" type="image/jpg" href="/img/logo.jpg">
+</head>
+<body>
+
+<div id="login_div" class="main-div">
+  <section>
+    <div class="container">
+      <div class="login-form">
+        <h1>Logg Inn</h1>
+        <form>
+          <input type="email" placeholder="E-Post.." id="email_field" autocomplete="off"/>
+          <input type="password" placeholder="Passord.." id="password_field" autocomplete="off"/>
+          <button type="submit" class="btn1" onclick="login()">Logg Inn </button>
+        </form>
+        <br>
+        <a  href="oprett-konto/">Oprett En Konto</a>
+        <br><br>
+        <a  href="gp/">Glømt Passord</a>
+          <br>
+    <div id="account_errors"style="margin-top: 5%; color:red;"></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script type = "text/javascript">
+  function Client() {
+     window.location = "client/";
+  }
+</script>
+
+  <div style="text-align: center " id="user_div" class="loggedin-div">
+        <h1 style="color: white; padding-top: 10%;"> Du er logget inn</h1>
+
+        <h2 id="user_para"></h2>
+      
+      <div class="container2">
+
+        <a href="https://BamseMoms.github.io/" style="text-decoration: none; ; font-size: 20px;" type="submit"  class="button" id="test">Official Website </a>
+        <h3 style="text-decoration: none;" type="submit" class="btn1" id="test2" onclick="Client()">Manager</h3>
+        
+        <p id="email"style=" color:white;"></p>
+        <h3 style="text-decoration: none;" type="submit" class="btn1" onclick="send_verification()" id="verify_btn">Brekreft</h3>
+        <h3 style="text-decoration: none;" type="submit" class="btn1" class="button" onclick="logout()">Logg ut </h3>
+        <h3 style="text-decoration: none;" type="submit" class="btn1" class="button" onclick="reset_user_password()">Tilbake Still Passord </h3>
+        <h3 style="text-decoration: none;" type="submit" class="btn1" class="button" onclick="Delete()">Slett Konto </h3>
+      </div>
+  </div>
+  <p style="font-size: 0px;" id="user_para2"></p>
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+  <script src="firebase.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
+
+
+<!-- Bruke 8 timer på alt av koding. Laget av BamseMoms https://bamsemoms.github.io-->
