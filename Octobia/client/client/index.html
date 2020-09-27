@@ -1,0 +1,59 @@
+<html>
+<head>
+  <title>BamseMoms | login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/jpg" href="/img/logo.jpg">
+</head>
+<body>
+
+  <div id="login_div" class="main-div">
+    <h3>BamseMoms Client Manager Login</h3>
+    <p style="color: red;"> Kontakt eier for å få tilgang her! </p>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Login to Account</button>
+    <br>
+    <button onclick="gp()">Glømt Passord</button>
+    <script type = "text/javascript">
+      function gp() {
+         window.location = "gp/";
+      }
+    </script>
+    <br>
+    <button onclick="tilbake()">Tilbake</button>
+    <script type = "text/javascript">
+      function tilbake() {
+         window.location = "/#";
+      }
+    </script>
+<br>
+    <!--<button onclick="create_account()">Create Account</button>-->
+    <br>
+    <div id="account_errors"style="margin-top: 5%; color:red;"></div>
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCEFRh9fiiFREnJu4DrJ7natjLbnjS16tE",
+    authDomain: "bamsemoms-client.firebaseapp.com",
+    databaseURL: "https://bamsemoms-client.firebaseio.com",
+    projectId: "bamsemoms-client",
+    storageBucket: "bamsemoms-client.appspot.com",
+    messagingSenderId: "394257574031",
+    appId: "1:394257574031:web:d82d458e6d519ffab7e8fa",
+    measurementId: "G-VKDE4VK96Z"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BamseMoms | Opprett En Konto</title>
+    <link rel="icon" type="image/jpg" href="/img/logo.jpg">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="../index.css" />
+</head>
+<body>
+    <div id="login_div"></div>
+    <div id="user_div"></div>
+
+    
+    <div id="login_div" class="main-div">
+        <section>
+          <div class="container">
+            <div class="login-form">
+              <h1>Opprett Konto</h1>
+              <form>
+                  <h4 style="color: white;" id="user_para2"></h4>
+                <input type="email" placeholder="E-Post.." id="email_field" autocomplete="off"/>
+                <input type="password" placeholder="Passord.." id="password_field" autocomplete="off"/>
+                <button type="submit" class="btn1" onclick="create_account()">Opprett Kontoen </button>
+              </form>
+              <br>
+              <a style="text-decoration: none;" type="submit" href="../#" >Hjem </a>
+              <div id="account_errors"style="margin-top: 5%; color:red;"></div>
+              <div id="verify_btn"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <h4 style=" font-size: 0px; color: white;" id="user_para"></h4>
+      <h4 style=" font-size: 0px; color: white;" id="test"></h4>
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+    <script src="../firebase.js"></script>
+    <script src="../main.js"></script>
+</body>
+</html>
+<!-- Bruke 8 timer på alt av koding. Laget av BamseMoms https://bamsemoms.github.io-->
