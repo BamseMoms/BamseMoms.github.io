@@ -233,7 +233,7 @@ header {
 	justify-content: center;
     width: 100%%;
 	height: 100vh;
-	background-color: rgb(93, 0, 214);
+	background-color: rgb(27, 40, 128);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e55d87', endColorstr='#5fc3e4', GradientType=1 );
 }
 .title {
@@ -518,7 +518,7 @@ opacity: 0;
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea, select {
 	height: 38px;
 	padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
-	background-color: rgb(93, 0, 214);
+	background-color: rgb(27, 40, 128);
 	color: #FFF;
 	border: none;
 	box-shadow: none;
@@ -542,7 +542,7 @@ input[type="submit"] {
 	text-transform: uppercase;
 	text-decoration: none;
 	white-space: nowrap;
-	background-color: rgb(93, 0, 214);
+	background-color: rgb(27, 40, 128);
 	border-radius: 0px;
 	border: 0;
 	cursor: pointer;
@@ -557,7 +557,7 @@ input[type="submit"]:hover {
 footer {
 	min-height: 120px;
 	padding: 40px 0 40px 0;
-	background-color: rgb(93, 0, 214);
+	background-color: rgb(27, 40, 128);
 	box-sizing: border-box;
 }
 footer p {
@@ -635,6 +635,6 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
 	width: 70px;
 	height: 2px;
 	background: #000; /* Old browsers */
-	background-color: rgb(93, 0, 214);
+	background-color: rgb(27, 40, 128);
 	margin-bottom: 50px;
 }
