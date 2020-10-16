@@ -61,10 +61,8 @@
     text-align:left;
     box-sizing:border-box;
     color:#fff;
-    background: -moz-linear-gradient(-45deg, #4F86C6 0%, #84B1ED 100%);
-	background: -webkit-linear-gradient(-45deg, #4F86C6 0%, #84B1ED  100%);
-	background: linear-gradient(135deg, #4F86C6 0%, #84B1ED  100%);
-    border:5px solid rgba(47,49,54,.9);
+    background: #D499B9;
+    border:5px solid #D499B9;
     border-radius:3px;
     font:normal normal 400 normal 16px/16px Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
     margin:0;
