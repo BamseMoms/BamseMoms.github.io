@@ -46,19 +46,34 @@
       <div class="mouse">
         <div class="wheel"></div>
       </div>
-      </a> </div>
+      </a></div>
     <a class="smoothscroll" href="#about">
     <div class="scroll-down"></div>
     </a> </header>
-    
   <section id="skills">
+    
     <div class="container">
       <div class="row">
         <h1><b>Om Octobia</b></h1>
         <div class="block"></div>
         <p style="  max-width: 75%;" >Tekst her!</b></p>
         <div style="width: 60%;">
- 
+         <!-- Add a placeholder for the Twitch embed -->
+         <div id="twitch-embed"></div>
+
+         <!-- Load the Twitch embed script -->
+         <script src="https://embed.twitch.tv/embed/v1.js"></script>
+     
+         <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+         <script type="text/javascript">
+           new Twitch.Embed("twitch-embed", {
+             width: 1000,
+             height: 450,
+             channel: "octobiaesport",
+             // only needed if your site is also embedded on embed.example.com and othersite.example.com 
+             parent: ["embed.example.com", "othersite.example.com"]
+           });
+         </script>
       </div>
     
     </div>
@@ -72,19 +87,19 @@
         <p></p>
       </div>
       <div class="row">
-        <div class="three columns"> <img src="http://placehold.it/220x220" width="220" height="220" alt="BamseMoms"/>
+        <div class="three columns"> <img src="img/igjen.png" width="220" height="220" alt="BamseMoms"/>
           <h4>Navn</h4>
           <p>Stilling</p>
           </div>
-        <div class="three columns"> <img src="http://placehold.it/220x220" width="220" height="220" alt=""/>
+        <div class="three columns"> <img src="img/igjen.png" width="220" height="220" alt=""/>
           <h4>Navn</h4>
           <p>Stilling</p>
         </div>
-        <div class="three columns"> <img src="http://placehold.it/220x220" width="220" height="220" alt=""/>
+        <div class="three columns"> <img src="img/igjen.png" width="220" height="220" alt=""/>
           <h4>Navn</h4>
           <p>Stilling</p>
         </div>
-        <div class="three columns"> <img src="http://placehold.it/220x220" width="220" height="220" alt=""/>
+        <div class="three columns"> <img src="img/igjen.png" width="220" height="220" alt=""/>
           <h4>Navn</h4>
           <p>Stilling</p>
         </div>
@@ -121,26 +136,48 @@
     <div class="container">
       <h1><b>Våre spillere</b></h1>
       <div class="block"></div>
-      <h3><b>Lag 1</b></h3>
+      <h5><b>Valorant | Lag 1</b></h5>
       <div class="row">
-        <div class="three columns"> <a href=""><img  src="img/igjen.png" class="image" alt="Work one"/></a></div>
-        <div class="three columns"> <a href=""><img  src="img/igjen.png" class="image" alt="Work Two"/></a></div>
-        <div class="three columns"> <a href=""></a><img  src="img/igjen.png" class="image" alt="Work Three"/></a></div>
-        <div class="three columns"> <a href=""></a><img  src="img/igjen.png" class="image" alt="Work Four"/></a></div>
+        <div class="two columns"> <a href=""><img  src="img/igjen.png" class="image"/></a>Masjan</div>
+        <div class="two columns"> <a href=""><img  src="img/igjen.png" class="image"/></a>Uansvarlig</div>
+        <div class="two columns"> <a href=""></a><img  src="img/igjen.png" class="image"/></a>Tina</div>
+        <div class="two columns"> <a href=""></a><img  src="img/igjen.png" class="image"/></a>Linnea</div>
+        <div class="two columns"> <a href=""></a><img  src="img/igjen.png" class="image"/></a>Nora</div>
       </div>
-      <h3><b>Lag 2</b></h3>
+
+      <h5><b>Fortnite trio | Lag 1</b></h5>
       <div class="row">
-        <div class="three columns"> <a href=""><img  src="img/igjen.png" class="image" alt="Work one"/></a></div>
-        <div class="three columns"> <a href=""><img  src="img/igjen.png" class="image" alt="Work Two"/></a></div>
-        <div class="three columns"> <a href=""></a><img  src="img/igjen.png" class="image" alt="Work Three"/></a></div>
-        <div class="three columns"> <a href=""></a><img  src="img/igjen.png" class="image" alt="Work Four"/></a></div>
+        <div class="two columns"> <a href=""><img  src="img/igjen.png" class="image"/></a>Kajsa</div>
+        <div class="two columns"> <a href=""><img  src="img/igjen.png" class="image"/></a>Julia</div>
+        <div class="two columns"> <a href=""></a><img  src="img/igjen.png" class="image"/></a>Stine</div>
       </div>
-      <h3><b>Partner | Sponser</b></h3>
+
+      <h5><b>Fortnite duo | Lag 1</b></h5>
+      <div class="row">
+        <div class="two columns"> <a href=""><img  src="img/igjen.png" class="image"/></a>Maja</div>
+        <div class="two columns"> <a href=""><img  src="img/igjen.png" class="image"/></a>Stine</div>
+      </div>
+
+      <h5><b>Fortnite duo | lag 2</b></h5>
+      <div class="row">
+        <div class="two columns"> <a href=""><img  src="img/igjen.png" class="image"/></a>Kajsa</div>
+        <div class="two columns"> <a href=""><img  src="img/igjen.png" class="image"/></a>Julia</div>
+      </div>
+
+      <h5><b>Rocket league lag 1</b></h5>
+      <div class="row">
+        <div class="two columns"> <a href=""><img  src="img/igjen.png" class="image"/></a>Kajsa</div>
+        <div class="two columns"> <a href=""><img  src="img/igjen.png" class="image"/></a>Maja</div>
+        <div class="two columns"> <a href=""><img  src="img/igjen.png" class="image"/></a>Nora</div>
+      </div>
+
+
+      <h5><b>Partner | Sponser</b></h5>
       <div class="row" style="margin-top: 30px;">
-        <div class="three columns"> <a href=""><img  src="img/igjen.png" class="image" alt="Work one"/></a></div>
-        <div class="three columns"> <a href=""><img  src="img/igjen.png" class="image" alt="Work Six"/></a></div>
-        <div class="three columns"> <a href=""><img  src="img/igjen.png" class="image" alt="Work Seven"/></a></div>
-        <div class="three columns"> <a href=""><img  src="img/igjen.png" class="image" alt="Work Eight"/></a></div>
+        <div class="two columns"> <a href="https://BamseMoms.github.io/"><img  src="https://bamsemoms.github.io/img/logo.jpg" class="image"/></a></div>
+        <div class="two columns"> <a href=""><img  src="img/igjen.png" class="image"/></a></div>
+        <div class="two columns"> <a href=""><img  src="img/igjen.png" class="image"/></a></div>
+        <div class="two columns"> <a href=""><img  src="img/igjen.png" class="image"/></a></div>
       </div>
     </div>
   </section>
@@ -174,6 +211,7 @@
         </div>
       </form>
     </div>-->
+
   </section>
   
   <footer>
@@ -184,8 +222,8 @@
       </div>
       <div class="three columns">
         <a style=" text-decoration: none; color: #C13584;  "  href="https://www.instagram.com/octobiaoc/"><i style="padding-right: 40px;" class="fab fa-instagram"></i></a>
-        <a style=" text-decoration: none; color: #6441a5; "  href="https://twitch.tv/octobiaoc"> <i style="padding-right: 40px;" class="fab fa-twitch"></i></a>
-        <a style=" text-decoration: none; color: #2382C; "  href="https://twitter.com/octobiaoc"><i class="fab fa-twitter"></i></a>
+        <a style=" text-decoration: none; color: #6441a5; "  href="https://www.twitch.tv/octobiaesport"> <i style="padding-right: 40px;" class="fab fa-twitch"></i></a>
+        <a style=" text-decoration: none; color: rgb(65, 147, 255); "  href="https://www.twitter.com/octobiaoc"><i class="fab fa-twitter"></i></a>
         <link rel="stylesheet" href="discordInvite.css"/>
         <script src="discordInvite.js"></script>
           <script>
@@ -201,7 +239,6 @@
   </footer>
 
   <script src="js/index.js"></script>
-  <script src="js/timer.js"></script>
     
 </body>
 </html>

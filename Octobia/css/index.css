@@ -21,6 +21,11 @@ span{
 	font-size: 10px;
 }
 
+twitch-embed{
+ 
+
+}
+
 /* Grid
 ********************************************************************* */  
 .container {
@@ -68,7 +73,8 @@ span{
     font-size: 240%;
 }
 .four.columns {
-	width: 30.6666666667%;
+	width: 16%;
+	font-size: 150%;
 }
 .five.columns {
 	width: 39.3333333333%;
