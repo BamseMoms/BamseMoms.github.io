@@ -35,6 +35,10 @@
                     <label style="color: white;"  for="E-Post">E-Post</label>
                     <input class="app-form-control" type="email" name="E-Post" placeholder="Ola.normann@norge.no" required>
                   </div>
+                  <div class="app-form-group">
+                    <label style="color: white;"  for="Discord Navn">Discord Navn</label>
+                    <input class="app-form-control" type="Discord Navn" name="Discord Navn" placeholder="Ola-Normann#3309" required>
+                  </div>
                   <label style="color: white"  for="Velg">Velg</label><br><br>
                   <select class="feedback-input" style=" color: black; " name="Valg">
                     <optgroup label="Velg">
@@ -45,17 +49,37 @@
                     </optgroup>
                     </select>
                   <div style="margin-top:6%"  class="app-form-group message">
-                    <label style="color: white;"  for="Hvorfor vil du bli whitelisted?">Hvorfor vil du bli whitelisted?</label>
-                    <textarea class="app-form-control" type="melding" name="Hvorfor vil du bli whitelisted?" placeholder="Melding"></textarea>
+                    <label style="color: white;"  for="Hvorfor vil du bli whitelisted?">Hvorfor vil du bli whitelisted? / Support</label>
+                    <textarea class="app-form-control" type="melding" name="Hvorfor vil du bli whitelisted? / Support" placeholder="Melding"></textarea>
                   </div>
                   <div class="app-form-group buttons">
-                    <!--<button class="app-form-button">SEND</button>-->
-                    <input class="app-form-button" type="submit" value="Send">
+                    <body onload="disableSubmit()">
+                      <input type="checkbox" name="TOS Godkjent" placeholder="TOS Godkjent" id="terms" onchange="activateButton(this)"><a href="./TOS">Jeg godtar vilkår og betingelser<a/></input>
+                     <br><br>
+                       <input class="app-fosrm-button" type="submit" value="Send" name="submit" id="submit">
+                    <!--<button class="app-form-button">SEND</button>
+                    <input class="app-form-button" type="submit" value="Send">-->
                   </div>
                 </div>
               </div>
             </div>
           </div>
     </form>
+    <script>
+      function disableSubmit() {
+       document.getElementById("submit").disabled = true;
+      }
+     
+       function activateButton(element) {
+     
+           if(element.checked) {
+             document.getElementById("submit").disabled = false;
+            }
+            else  {
+             document.getElementById("submit").disabled = true;
+           }
+     
+       }
+     </script>
 </body>
 </html>
